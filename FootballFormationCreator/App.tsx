@@ -1,6 +1,8 @@
 // Import required modules from the React and React Native libraries
 import React, {useState} from 'react';
-import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
+import {StyleSheet, View, Text, TouchableOpacity, SafeAreaView} from 'react-native';
+import Pitch from './components/Pitch'; // Import the Pitch component
+
 
 // Define the App component as a functional component
 const App: React.FC = () => {
@@ -20,6 +22,10 @@ const App: React.FC = () => {
       <TouchableOpacity style={styles.button} onPress={handleFormationChange}>
         <Text style={styles.buttonText}>Change Formation</Text>
       </TouchableOpacity>
+      <SafeAreaView>
+        {/* Render the Pitch component */}
+        <Pitch />
+      </SafeAreaView>
     </View>
   );
 };
