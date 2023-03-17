@@ -11,6 +11,18 @@ const Pitch: React.FC = () => {
       {/* Top half of the pitch */}
       <View style={styles.halfPitchTop} />
 
+      {/* 16-yard box top */}
+      <View style={styles.sixteenYardBoxTop} />
+
+      {/* 16-yard box bottom */}
+      <View style={styles.sixteenYardBoxBottom} />
+
+      {/* Goal top */}
+      <View style={styles.goalTop} />
+
+      {/* Goal bottom */}
+      <View style={styles.goalBottom} />
+
       {/* Center circle */}
       <View style={styles.centerCircle} />
 
@@ -47,6 +59,43 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: 'white',
   },
+  sixteenYardBoxTop: {
+    position: 'absolute',
+    borderWidth: 2,
+    borderColor: 'white',
+    width: '55%',
+    height: '16%',
+    top: '10%',
+    alignSelf: 'center',
+  },
+  sixteenYardBoxBottom: {
+    position: 'absolute',
+    borderWidth: 2,
+    borderColor: 'white',
+    width: '55%',
+    height: '16%',
+    bottom: '10%',
+    alignSelf: 'center',
+  },
+  goalTop: {
+    position: 'absolute',
+    borderWidth: 2,
+    borderColor: 'white',
+    width: '10%',
+    height: '2%',
+    top: '7%',
+    alignSelf: 'center',
+  },
+  goalBottom: {
+    position: 'absolute',
+    borderWidth: 2,
+    borderColor: 'white',
+    width: '10%',
+    height: '2%',
+    bottom: '7%',
+    alignSelf: 'center',
+  },
+  
 });
 
 export default Pitch;
