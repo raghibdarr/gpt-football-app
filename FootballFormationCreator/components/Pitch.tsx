@@ -1,5 +1,8 @@
 import * as React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Dimensions} from 'react-native';
+
+const screenWidth = Dimensions.get('window').width;
+const screenHeight = Dimensions.get('window').height;
 
 // Main Pitch component
 const Pitch: React.FC = () => {
@@ -20,7 +23,8 @@ const Pitch: React.FC = () => {
 // Styles for the Pitch component
 const styles = StyleSheet.create({
   pitch: {
-    flex: 1,
+    width: screenWidth,
+    height: screenHeight,
     backgroundColor: 'green',
     justifyContent: 'center',
   },
